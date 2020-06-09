@@ -1,1 +1,2 @@
-import '../imports/ui/posts_list.js';
+import '../imports/ui/body.js';
+
