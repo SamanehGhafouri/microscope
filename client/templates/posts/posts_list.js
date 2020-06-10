@@ -1,5 +1,5 @@
+import { Posts } from '../../../lib/collections/Posts.js';
 import './posts_list.html';
-
 var postsData = [
   {
     title: 'Introducing Telescope',
@@ -15,5 +15,8 @@ var postsData = [
   }
 ];
 Template.postsList.helpers({
-  posts: postsData
+  posts: function () {
+    return Posts.find();
+
+  }
 });
