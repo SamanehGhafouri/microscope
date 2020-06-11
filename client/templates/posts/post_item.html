@@ -3,5 +3,7 @@
     <div class="post-content">
       <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
     </div>
+        <!-- Create discuss button. We named the post route postPage, we can use this -->
+      <a href="{{pathFor 'postPage' someOtherPost}}" class="discuss btn btn-default">Discuss</a>
   </div>
 </template>
