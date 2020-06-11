@@ -1,4 +1,5 @@
 import { Posts } from '../../../lib/collections/Posts.js';
+import './post_item.js';
 import './posts_list.html';
 var postsData = [
   {

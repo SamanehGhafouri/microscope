@@ -1,13 +1,12 @@
-<!--TODO: Please remove me later -->
-<body>
+<template name="layout">
 <div class="container">
     <header class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
-            <a class="navbar-brand" href="/">Microscope (Merged)</a>
+            <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope (Merged)</a>
         </div>
     </header>
     <div id="main">
-        {{> postsList}}
+        {{> yield}}
     </div>
 </div>
-</body>
+</template>
