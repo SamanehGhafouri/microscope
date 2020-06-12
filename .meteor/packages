@@ -25,3 +25,6 @@ twbs:bootstrap
 session
 iron:router
 sacha:spin
+stylus@=2.513.13
+ian:accounts-ui-bootstrap-3
+accounts-password
