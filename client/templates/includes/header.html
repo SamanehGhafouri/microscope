@@ -13,6 +13,8 @@
             <!-- Adding a link to the header for building the new post page in router.js -->
 
             <ul class="nav navbar-nav">
+                <!-- used by accounts package
+                 since it is reactive, the link will appear or disappear as you log in and out-->
                 {{#if currentUser}}
                     <li>
                         <a href="{{pathFor 'postSubmit'}}">Submit Post</a>
