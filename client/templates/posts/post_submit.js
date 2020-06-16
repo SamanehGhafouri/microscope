@@ -1,5 +1,6 @@
 import './post_submit.html';
-import {Posts} from "../../../lib/collections/Posts";
+import '../includes/access_denied.js';
+import {Posts} from "../../../lib/collections/Posts.js";
 
 //Creating posts: insert some input to the submit table and to be added to our list in the first page
 Template.postSubmit.events({
