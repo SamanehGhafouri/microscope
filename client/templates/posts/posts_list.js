@@ -17,7 +17,8 @@ let postsData = [
 ];
 Template.postsList.helpers({
   posts: function () {
-    return Posts.find();
+    //sort posts based on the date submitted
+    return Posts.find({}, {sort: {submitted: -1}});
 
   }
 });
