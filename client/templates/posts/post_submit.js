@@ -1,7 +1,7 @@
 import './post_submit.html';
 import {Posts} from "../../../lib/collections/Posts";
 
-//Creating posts
+//Creating posts: insert some input to the submit table and to be added to our list in the first page
 Template.postSubmit.events({
     'submit form': function (e) {
         e.preventDefault();
