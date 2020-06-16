@@ -20,6 +20,10 @@ Template.postSubmit.events({
             if (error)
                 return alert(error.reason);
 
+            // No post with the same URL
+            if (result.postExists)
+                alert('This link has already been posted');
+
             Router.go('postPage', {_id: result._id});
 
         });
