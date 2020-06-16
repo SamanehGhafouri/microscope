@@ -1,7 +1,7 @@
 import { Posts } from '../../../lib/collections/Posts.js';
 import './post_item.js';
 import './posts_list.html';
-var postsData = [
+let postsData = [
   {
     title: 'Introducing Telescope',
     url: 'http://sachagreif.com/introducing-telescope/'

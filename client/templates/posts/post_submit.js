@@ -1,4 +1,5 @@
 import './post_submit.html';
+import {Posts} from "../../../lib/collections/Posts";
 
 //Creating posts
 Template.postSubmit.events({
