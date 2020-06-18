@@ -23,9 +23,6 @@ Template.postSubmit.events({
             // No post with the same URL
             if (result.postExists)
                 alert('This link has already been posted');
-
-            Router.go('postPage', {_id: result._id});
-
         });
 
         //     REMOVE THIS PLEASE!!!!!!!!!!!!!!!!!
@@ -34,5 +31,6 @@ Template.postSubmit.events({
         // // construct a URL to browse to
         // Router.go('postPage', post);
 
+        Router.go('postsList');
     }
 });
