@@ -1,5 +1,7 @@
 import './post_item.html';
 import '../posts/post_edit.js';
+import '../../../lib/collections/Posts.js';
+import '../../../lib/permissions.js';
 
 Template.postItem.helpers({
   ownPost: function(){
