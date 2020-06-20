@@ -1,6 +1,8 @@
 import './post_edit.html';
-import {Posts} from "../../../lib/collections/Posts";
+import {Posts} from "../../../lib/collections/Posts.js";
 import '../../../lib/router.js';
+import '../includes/errors.js';
+import '../../helpers/errors.js';
 
 Template.postEdit.events({
     'submit form': function (e) {
@@ -16,7 +18,7 @@ Template.postEdit.events({
         Posts.update(currentPostId, {$set: postProperties}, function(error) {
             if (error){
                 // display the error to the user
-                alert(error.reason);
+                Meteor.throwError(error.reason);
 
             }   else {
                 Router.go('postPage', {_id: currentPostId});
