@@ -1,19 +1,29 @@
 
-<!--Creating submit post when we click on that to see a table to insert url and name the post-->
+<!--Creating submit post when we click on that to see a table to insert URL and Title of the post-->
 <template name="postSubmit">
     <form class="main form page">
-        <div class="form-group">
+<!-- display the error message below the post to make sure that the user enter both a URL and a Title for their post!-->
+        <div class="form-group {{errorClass 'url'}}">
+
             <label class="control-label" for="url">URL</label>
             <div class="controls">
                 <input name="url" id="url" type="text" value="" placeholder="YOUR URL" class="form-control"/>
+<!-- display the error in a right position               -->
+                <span class="help-block">{{errorMessage 'url'}}</span>
             </div>
         </div>
-        <div class="form-group">
+<!-- display error in the right position      -->
+        <div class="form-group {{errorClass 'title'}}">
             <label class="control-label" for="title">Title</label>
             <div class="controls">
                 <input name="title" id="title" type="text" value="" placeholder="Name your post" class="form-control"/>
+<!-- display the error in right position  -->
+                <span class="help-block">{{errorMessage 'title'}}</span>
             </div>
         </div>
         <input type="submit" value="Submit" class="btn btn-primary"/>
+
+
     </form>
+
 </template>
