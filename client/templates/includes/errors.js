@@ -9,3 +9,14 @@ Template.errors.helpers({
 
     }
 });
+
+//Set a timeout for errors after few seconds of showing the error
+// they disapear
+Template.error.onRendered(function () {
+    let error = this.data;
+    Meteor.setTimeout(function () {
+        Errors.remove(error._id);
+
+    }, 3000);
+
+})
