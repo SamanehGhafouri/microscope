@@ -3,5 +3,12 @@ route to display in any post we want!-->
 <template name="postPage">
     <div class="post-page page">
         {{> postItem}}
+
+<!--add comments in discussion page under each posts-->
+        <ul class="comments">
+            {{#each comments}}
+                {{> commentItem}}
+            {{/each}}
+        </ul>
     </div>
 </template>

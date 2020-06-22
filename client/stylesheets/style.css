@@ -144,5 +144,9 @@ body {
     pointer-events: auto;
 }
 
+ul.comments {
+    padding: 0;
+}
+
 
 

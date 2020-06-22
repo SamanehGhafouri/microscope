@@ -91,7 +91,16 @@ if (Posts.find().count() === 0) {
         postId: googleId,
         userId: stefan._id,
         author: stefan.profile.name,
-        submitted: new Date(now - 1 * 3600 * 1000),
+        submitted: new Date(now - 2 * 3600 * 1000),
+        body: 'Go baby check out my pickle! Do you like what you see?'
+    });
+
+    Comments.insert({
+        postId: googleId,
+        userId: samaneh._id,
+        author: samaneh.profile.name,
+        submitted: new Date(now - 3 * 3600 * 1000),
+        body: 'Oh Yeah!'
     });
     ////////////////////////////////////////////////////
     //Insert posts
