@@ -8,25 +8,29 @@ if (Posts.find().count() === 0) {
     // Create  users//////////////////////////////
     // first
     let tomId = Meteor.users.insert({
-        profile: { name: 'Tom Coleman' }
+        username: 'Tom Coleman'
+        // profile: { name: 'Tom Coleman' }
     });
     let tom = Meteor.users.findOne(tomId);
 
     //Second
     let sachaId = Meteor.users.insert({
-        profile: { name: 'Sacha Greif' }
+        username: 'Sacha Greif'
+        // profile: { name: 'Sacha Greif' }
     });
     let sacha = Meteor.users.findOne(sachaId);
 
     //Third
     let samanehId = Meteor.users.insert({
-        profile: { name: 'Samaneh Ghafouri'}
+        username: 'Samaneh Ghafouri'
+        // profile: { name: 'Samaneh Ghafouri'}
     });
     let samaneh = Meteor.users.findOne(samanehId);
 
     //Forth
     let stefanId = Meteor.users.insert({
-        profile: { name: 'Stefan Agapie'}
+        username: 'Stefan Agapie'
+        // profile: { name: 'Stefan Agapie'}
     });
     let stefan = Meteor.users.findOne(stefanId)
 
@@ -36,7 +40,8 @@ if (Posts.find().count() === 0) {
     let telescopeId = Posts.insert({
         title: 'Introducing Telescope',
         userId: sacha._id,
-        author: sacha.profile.name,
+        // author: sacha.profile.name,
+        author: sacha.username,
         url: 'http://sachagreif.com/introducing-telescope/',
         submitted: new Date(now - 7 * 3600 * 1000)
     });
@@ -45,7 +50,7 @@ if (Posts.find().count() === 0) {
     let gitHubId = Posts.insert({
         title: 'GitHub',
         userId: stefan._id,
-        author: stefan.profile.name,
+        author: stefan.username,
         url: 'https://github.com',
         submitted: new Date(now - 8 * 3600 * 1000)
     });
@@ -54,7 +59,7 @@ if (Posts.find().count() === 0) {
     let googleId = Posts.insert({
         title: 'Google website',
         userId: samaneh._id,
-        author:samaneh.profile.name,
+        author:samaneh.username,
         url: 'https://google.com',
         submitted: new Date(now - 9 * 3600 * 1000)
     });
@@ -64,7 +69,7 @@ if (Posts.find().count() === 0) {
     Comments.insert({
         postId: telescopeId,
         userId: tom._id,
-        author: tom.profile.name,
+        author: tom.username,
         submitted: new Date(now - 5 * 3600 * 1000),
         body: 'Interesting project Sacha, can I get involved?'
     });
@@ -73,7 +78,7 @@ if (Posts.find().count() === 0) {
     Comments.insert({
         postId: telescopeId,
         userId: sacha._id,
-        author: sacha.profile.name,
+        author: sacha.username,
         submitted: new Date(now - 3 * 3600 * 1000),
         body: 'You sure can Tom!'
     });
@@ -82,7 +87,7 @@ if (Posts.find().count() === 0) {
     Comments.insert({
         postId: gitHubId,
         userId: samaneh._id,
-        author: samaneh.profile.name,
+        author: samaneh.username,
         submitted: new Date(now - 2 * 3600 * 1000),
         body: 'I am interested in your post!'
     });
@@ -90,7 +95,7 @@ if (Posts.find().count() === 0) {
     Comments.insert({
         postId: googleId,
         userId: stefan._id,
-        author: stefan.profile.name,
+        author: stefan.username,
         submitted: new Date(now - 2 * 3600 * 1000),
         body: 'Go baby check out my pickle! Do you like what you see?'
     });
@@ -98,7 +103,7 @@ if (Posts.find().count() === 0) {
     Comments.insert({
         postId: googleId,
         userId: samaneh._id,
-        author: samaneh.profile.name,
+        author: samaneh.username,
         submitted: new Date(now - 3 * 3600 * 1000),
         body: 'Oh Yeah!'
     });
@@ -108,7 +113,7 @@ if (Posts.find().count() === 0) {
     Posts.insert({
         title: 'Meteor',
         userId: tom._id,
-        author: tom.profile.name,
+        author: tom.username,
         url: 'http://meteor.com',
         submitted: new Date(now - 10 * 3600 * 1000)
     });
@@ -117,7 +122,7 @@ if (Posts.find().count() === 0) {
     Posts.insert({
         title: 'The Meteor Book',
         userId: tom._id,
-        author: tom.profile.name,
+        author: tom.username,
         url: 'http://themeteorbook.com',
         submitted: new Date(now - 12 * 3600 * 1000)
     });

@@ -1,6 +1,7 @@
 import './post_page.html';
 import '../comments/comment_item.js';
 import {Comments} from "../../../lib/collections/comments.js";
+import '../comments/comment_submit.js';
 import {Posts} from "../../../lib/collections/Posts";
 
 

@@ -4,3 +4,4 @@ import '../lib/collections/Posts.js';
 import '../client/templates/posts/post_submit.js';
 import '../client/templates/includes/access_denied.js';
 import '../client/helpers/errors.js';
+import '../client/helpers/config.js';
