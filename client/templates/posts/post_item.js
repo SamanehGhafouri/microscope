@@ -15,7 +15,7 @@ Template.postItem.helpers({
     return a.hostname;
   }
 
-  //helper function for commentCount
+  //helper function for commentCount we remove this because we use denormalization
   // commentsCount: function () {
   //   return Comments.find({postId: this._id}).count()};
 
