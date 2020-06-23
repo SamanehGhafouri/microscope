@@ -43,7 +43,9 @@ if (Posts.find().count() === 0) {
         // author: sacha.profile.name,
         author: sacha.username,
         url: 'http://sachagreif.com/introducing-telescope/',
-        submitted: new Date(now - 7 * 3600 * 1000)
+        submitted: new Date(now - 7 * 3600 * 1000),
+        //add comments count
+        commentsCount: 2
     });
 
     // a post by stefan
@@ -52,7 +54,8 @@ if (Posts.find().count() === 0) {
         userId: stefan._id,
         author: stefan.username,
         url: 'https://github.com',
-        submitted: new Date(now - 8 * 3600 * 1000)
+        submitted: new Date(now - 8 * 3600 * 1000),
+        commentsCount: 2
     });
 
     // a post by samaneh
@@ -61,7 +64,8 @@ if (Posts.find().count() === 0) {
         userId: samaneh._id,
         author:samaneh.username,
         url: 'https://google.com',
-        submitted: new Date(now - 9 * 3600 * 1000)
+        submitted: new Date(now - 9 * 3600 * 1000),
+        commentsCount: 0
     });
     /////////////////////////////////////////////////
     //Insert comments
@@ -115,7 +119,8 @@ if (Posts.find().count() === 0) {
         userId: tom._id,
         author: tom.username,
         url: 'http://meteor.com',
-        submitted: new Date(now - 10 * 3600 * 1000)
+        submitted: new Date(now - 10 * 3600 * 1000),
+        commentsCount: 0
     });
 
     // a post by tom
@@ -124,7 +129,8 @@ if (Posts.find().count() === 0) {
         userId: tom._id,
         author: tom.username,
         url: 'http://themeteorbook.com',
-        submitted: new Date(now - 12 * 3600 * 1000)
+        submitted: new Date(now - 12 * 3600 * 1000),
+        commentsCount: 0
     });
 
 
