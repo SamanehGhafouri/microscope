@@ -12,8 +12,10 @@ if (Meteor.isServer) {
     });
 
     //Publish new collection Comments
-    Meteor.publish('comments', function () {
-        return Comments.find();
+    Meteor.publish('comments', function (postId) {
+        //we put subscription inside the route
+        check(postId, String);
+        return Comments.find({postId: postId});
 
     });
 }
