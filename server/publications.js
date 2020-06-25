@@ -22,6 +22,10 @@ if (Meteor.isServer) {
 
     //Publish new collection Notifications
     Meteor.publish('notifications', function () {
-        return Notifications.find();
+        //by this return we will see all the notifications for all users
+        // return Notifications.find();
+        // with this code only sync notifications that are relevant to the user.
+        return Notifications.find({userId: this.userId, read:false});
+
     })
 }
