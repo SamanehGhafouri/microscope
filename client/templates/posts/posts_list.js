@@ -15,11 +15,11 @@ let postsData = [
     url: 'http://themeteorbook.com'
   }
 ];
-Template.postsList.helpers({
-  posts: function () {
-    //sort posts based on the date submitted
-    return Posts.find({}, {sort: {submitted: -1}});
-
-  }
-});
+// Template.postsList.helpers({
+//   posts: function () {
+//     //sort posts based on the date submitted
+//     return Posts.find({}, {sort: {submitted: -1}});
+//
+//   }
+// });
 

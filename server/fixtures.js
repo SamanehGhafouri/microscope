@@ -137,7 +137,7 @@ if (Posts.find().count() === 0) {
     // Add more posts the way that we need to do pagination to see them
     for (let i = 0; i < 10; i++) {
         Posts.insert({
-            title: 'Test post #' + i,
+            title: 'Test post # ' +  i,
             author: sacha.username,
             userId: sacha._id,
             url: 'http://google.com/?q=test-' + i,

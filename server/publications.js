@@ -7,8 +7,12 @@ import {Notifications} from "../lib/collections/notifications.js";
 if (Meteor.isServer) {
 
     //Publish new collection Posts
-    Meteor.publish('posts', function () {
-        return Posts.find();
+    Meteor.publish('posts', function (options) {
+        check(options, {
+            sort: Object,
+            limit: Number
+        });
+        return Posts.find({}, options);
 
     });
 
