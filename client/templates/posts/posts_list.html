@@ -1,10 +1,15 @@
 <template name="postsList">
-  <div class="posts page">
+  <div class="posts">
 
     {{#each posts}}
       {{> postItem}}
 <!--        <li>{{title}}</li>-->
     {{/each}}
+
+<!--Add Load more button at the bottom of the posts. Each time we click on that load 5 more posts-->
+    {{#if nextPath}}
+        <a class="load-more" href="{{nextPath}}">Load more</a>
+    {{/if}}
 
   </div>
 </template>
