@@ -19,10 +19,7 @@ if (Meteor.isServer) {
     // to get back our posts we create publication that only publishes one post identified by _id
     Meteor.publish('singlePosts', function (id) {
         check(id, String)
-        console.log("the singlePost");
-        console.log(id);
         let result = Posts.find(id);
-        console.log(result);
         return Posts.find(id);
 
     });

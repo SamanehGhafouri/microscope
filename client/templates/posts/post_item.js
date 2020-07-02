@@ -22,5 +22,16 @@ Template.postItem.helpers({
 
 });
 
+// Call a server upvote Method when the user clicks on the button.
+Template.postItem.events({
+  'click .upvote': function (e) {
+    e.preventDefault();
+    // console.log('this is for vote');
+    // console.log(e);
+    Meteor.call('upvote', this._id);
+
+  }
+});
+
 
 
