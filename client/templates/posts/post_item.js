@@ -2,6 +2,7 @@ import './post_item.html';
 import '../posts/post_edit.js';
 import '../../../lib/collections/Posts.js';
 import '../../../lib/permissions.js';
+import '../../helpers/handlebars.js';
 import {Comments} from "../../../lib/collections/comments.js";
 
 Template.postItem.helpers({
