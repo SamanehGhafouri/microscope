@@ -14,10 +14,10 @@
 
             <ul class="nav navbar-nav">
                 <!--Define path for new and most voted posts-->
-                <li>
+                <li class="{{activeRouteClass 'home' 'newPosts'}}">
                     <a href="{{pathFor 'newPosts'}}">New</a>
                 </li>
-                <li>
+                <li class="{{activeRouteClass 'bestPosts'}}">
                     <a href="{{pathFor 'bestPosts'}}">Best</a>
                 </li>
                 <!-- used by accounts package
