@@ -60,7 +60,9 @@ Template.postEdit.events({
         if (confirm("Delete this  post?")) {
             let currentPostId = this._id;
             Posts.remove(currentPostId);
-            Router.go('postsList');
+            //since we define new and best posts in home
+            Router.go('home');
+            // Router.go('postsList');
         }
 
     }

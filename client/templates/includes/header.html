@@ -7,12 +7,19 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{{pathFor 'postsList'}}">Microscope</a>
+            <a class="navbar-brand" href="{{pathFor 'home'}}">Microscope</a>
         </div>
         <div class="collapse navbar-collapse" id="navigation">
             <!-- Adding a link to the header for building the new post page in router.js -->
 
             <ul class="nav navbar-nav">
+                <!--Define path for new and most voted posts-->
+                <li>
+                    <a href="{{pathFor 'newPosts'}}">New</a>
+                </li>
+                <li>
+                    <a href="{{pathFor 'bestPosts'}}">Best</a>
+                </li>
                 <!-- used by accounts package
                  since it is reactive, the link will appear or disappear as you log in and out-->
                 {{#if currentUser}}
