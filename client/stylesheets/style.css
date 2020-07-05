@@ -154,5 +154,15 @@ ul.comments {
 .post.animate{
     transition: all 300ms 0ms ease-in;
 }
-
+/*We don't want our pages to be absolutely positioned relative to window, since they would overlap the app's header*/
+#main{
+    position: relative;
+}
+/*if we want to fade pages in and out we make sure they're displayed on top of the other.
+so the position is absolute*/
+.page{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
 
