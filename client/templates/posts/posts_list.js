@@ -23,9 +23,20 @@ let postsData = [
 //   }
 // });
 //To define our hook we put a wrapper around our posts in html
+// For animating the posts
 Template.postsList.onRendered(function () {
   //define the hook
   this.find('.wrapper')._uihooks = {
+
+    //insert element animating
+    //fade in new posts
+    insertElement: function(node, next){
+      $(node)
+          .hide()
+          .insertBeforea(next)
+          .fadeIn();
+
+    },
     //moveElement will call whenever an elements position changes instead of Blaze's default behavior
     // node: the element currently being moved to a new position in DOM
     // next: element right after the new position that node is being moved to
@@ -65,6 +76,15 @@ Template.postsList.onRendered(function () {
       //reset everything to 0, animated
       $node.addClass('animate').css('top', 0);
       $inBetween.addClass('animate').css('top', 0);
+
+    },
+
+    //remove element animating
+    removeElement: function (node) {
+      $(node).fadeOut(function () {
+        $(this).remove();
+
+      });
 
     }
   }
