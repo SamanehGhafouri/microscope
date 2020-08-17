@@ -22,15 +22,15 @@ if (Posts.find().count() === 0) {
 
     //Third
     let samanehId = Meteor.users.insert({
-        username: 'Samaneh Ghafouri'
-        // profile: { name: 'Samaneh Ghafouri'}
+        username: 'Samaneh Gh'
+        // profile: { name: 'Samaneh Gh'}
     });
     let samaneh = Meteor.users.findOne(samanehId);
 
     //Forth
     let stefanId = Meteor.users.insert({
-        username: 'Stefan Agapie'
-        // profile: { name: 'Stefan Agapie'}
+        username: 'Stefan Ag'
+        // profile: { name: 'Stefan Ag'}
     });
     let stefan = Meteor.users.findOne(stefanId)
 
