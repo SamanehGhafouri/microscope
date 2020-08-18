@@ -1,15 +1,20 @@
 .grid-block, .main, .post, .comments li, .comment-form {
-    background: #fff;
+
+    background: #f4976c;
     border-radius: 3px;
     padding: 10px;
     margin-bottom: 10px;
-    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    -webkit-box-shadow: 0 1px 1px rgba(207, 213, 224, 0.15);
     -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
 
 body {
-    background: #eee;
-    color: #666666; }
+
+    background: #fbe8a6;
+    /*background: #f6ece6;*/
+    color: #666666;}
+
+
 #main {
     position: relative;
 }
@@ -23,7 +28,10 @@ body {
     margin-bottom: 10px;}
     /* line 32, ../sass/style.scss */
     .navbar .navbar-inner {
-    border-radius: 0px 0px 3px 3px; }
+    border-radius: 0px 0px 3px 3px;
+        color: red;
+
+    }
 #spinner {
     height: 300px; }
 
@@ -66,7 +74,9 @@ body {
                 font-weight: normal;
                 font-size: 14px;
                 display: inline-block;
-                color: #aaaaaa; }
+                color: #6d6b6b;
+
+            }
         .post .post-content p { margin: 0; }
     .post .discuss { display: block; float: right; margin-top: 7px; }
 .comments {
@@ -166,3 +176,62 @@ so the position is absolute*/
     width: 100%;
 }
 
+.navbar-collapse{
+    /*background: #f5e6df;*/
+    background: #303c6c;
+
+}
+.navbar-default .navbar-brand {
+    /*color: #5cdb95;*/
+    color: #f6ece6;
+}
+.post-content a{
+    color: #05386b;
+}
+.post-content p{
+    color: #edf5e1;
+}
+.load-more {
+    background: #f4976c;
+    color: #f6ece6;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #303c6c;
+    background-color: #b4dfe5;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #b4dfe5;
+}
+.post .post-content h3 span {
+    color: #edf5e1;
+}
+.btn-default {
+    color: #303c6c;
+    background-color: #fbe8a6;
+    border-color: #edf5e1;
+}
+.comments{
+    color: #fbe8a6;
+}
+.controls{
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fbe8a6;
+}
+.navbar-brand:hover {
+    color: #f4976c !important;
+}
+.nav.navbar-nav li a:hover {
+    color: #f4976c !important;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #b4dfe5;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fbe8a6;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fbe8a6;
+}
