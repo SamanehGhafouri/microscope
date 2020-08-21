@@ -12,12 +12,13 @@
     {{#if nextPath}}
         <a class="load-more" href="{{nextPath}}">Load more</a>
 <!--  ready used when we are at the bottom and finished loading. it will show a spinner      -->
+
     {{else}}
         {{#unless ready}}
             {{> spinner}}
          {{/unless}}
-
     {{/if}}
+
 
   </div>
 </template>
