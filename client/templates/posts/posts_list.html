@@ -1,24 +1,16 @@
 <template name="postsList">
   <div class="posts">
-      <div class="wrapper">
-
-        {{#each posts}}
-            {{> postItem}}
-<!--            <li>{{title}}</li>-->
-        {{/each}}
-      </div>
-
+    {{#each posts}}
+        {{> postItem}}
+    {{/each}}
 <!--Add Load more button at the bottom of the posts. Each time we click on that load 5 more posts-->
     {{#if nextPath}}
         <a class="load-more" href="{{nextPath}}">Load more</a>
 <!--  ready used when we are at the bottom and finished loading. it will show a spinner      -->
-
     {{else}}
         {{#unless ready}}
             {{> spinner}}
-         {{/unless}}
+        {{/unless}}
     {{/if}}
-
-
   </div>
 </template>
