@@ -1,0 +1,11 @@
+{
+    "name": "Microscope_Samaneh",
+    "version": "1.0",
+    "galaxy.meteor.com": {
+        "env": {
+            "ROOT_URL": "https://microscope-samaneh.meteorapp.com/",
+            "MONGO_URL": "mongodb+srv://<username>:<pass>@microscope.9mc0h.mongodb.net/microscope?retryWrites=true&w=majority"
+        }
+    },
+    "comment": "meteor deploy microscope-samaneh.meteorapp.com --settings settings.json"
+}
